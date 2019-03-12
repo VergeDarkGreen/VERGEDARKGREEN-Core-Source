@@ -1,0 +1,26 @@
+[Unit]
+Description=XVGDG's distributed currency daemon
+After=network.target
+
+[Service]
+User=XVGDG
+Group=XVGDG
+
+Type=forking
+PIDFile=/var/lib/XVGDGd/XVGDGd.pid
+
+ExecStart=/usr/bin/XVGDGd -daemon -pid=/var/lib/XVGDGd/XVGDGd.pid \
+          -conf=/etc/XVGDG/XVGDG.conf -datadir=/var/lib/XVGDGd
+
+ExecStop=-/usr/bin/XVGDG-cli -conf=/etc/XVGDG/XVGDG.conf \
+         -datadir=/var/lib/XVGDGd stop
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target

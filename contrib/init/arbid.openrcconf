@@ -1,0 +1,26 @@
+# /etc/conf.d/XVGDGd: config file for /etc/init.d/XVGDGd
+
+# Config file location
+#BITCOIND_CONFIGFILE="/etc/XVGDG/XVGDG.conf"
+
+# What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
+#BITCOIND_PIDDIR="/var/run/XVGDGd"
+
+# What filename to give the pidfile
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/XVGDGd.pid"
+
+# Where to write XVGDGd data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/XVGDGd"
+
+# User and group to own XVGDGd process
+#BITCOIND_USER="XVGDG"
+#BITCOIND_GROUP="XVGDG"
+
+# Path to XVGDGd executable
+#BITCOIND_BIN="/usr/bin/XVGDGd"
+
+# Nice value to run XVGDGd under
+#BITCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+BITCOIND_OPTS=""

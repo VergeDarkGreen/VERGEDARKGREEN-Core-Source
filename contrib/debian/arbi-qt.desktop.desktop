@@ -1,0 +1,11 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=XVGDG
+Comment=XVGDG P2P Cryptocurrency
+Exec=XVGDG-qt %u
+Terminal=false
+Type=Application
+Icon=XVGDG128
+MimeType=x-scheme-handler/XVGDG;
+Categories=Office;Finance;
+Name[en_US]=XVGDG-qt.desktop
