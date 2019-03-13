@@ -151,7 +151,8 @@ public:
 
         // DNS Seeding
         vSeeds.push_back(CDNSSeedData("vergedarkgreen.pw", "104.237.2.72"));
-
+	vSeeds.push_back(CDNSSeedData("104.251.214.201", "104.251.214.201"));
+	vSeeds.push_back(CDNSSeedData("63.142.250.54", "63.142.250.54"));
 
         // XVGDG addresses start with 'V'
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 71);
